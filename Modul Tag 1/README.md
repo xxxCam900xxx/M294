@@ -62,10 +62,15 @@ Definition. Webtechnologien sind Instrumente der Webseitenerstellung. Ihre Funkt
 # Client-Server-Modell im World Wide Web
 
 ![](/Modul%20Tag%201/Content/ClientServerModell01.png)
+
 Unser Endgerät macht eine Server Abfrage
+
 ![](/Modul%20Tag%201/Content/ClientServerModell02.png)
+
 Serverseitiger Code wird von einem Dienst auf dem Server ausgeführt, z.B. mit PHP, Java oder JS
+
 ![](/Modul%20Tag%201/Content/ClientServerModelll03.png)
+
 Clientseitiger Code wird von vom Browser auf dem Client ausgeführt, z.B. mit JS
 
 ---
