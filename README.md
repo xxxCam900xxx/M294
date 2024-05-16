@@ -79,3 +79,9 @@ Im index.html File erstellen Sie folgendes Konstrukt:
 ```
 oder geben Sie ein Ausrufezeichen ein und Klicken Sie die oberste Möglichkeit.
 ![AlternativKonstrukt](/Content/ExlemationStruktur.png)
+
+Jetzt sind Sie bereit, den Live Server zu starten, den wir zu Beginn installiert haben.
+
+Klicken Sie dazu rechts unten auf "**Go Live**".
+
+![GoLive Button](/Content/GoLive.png)
