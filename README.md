@@ -16,15 +16,18 @@ M294 Frontend einer interaktiven Webapplikation realisieren
 
 ---
 ## Modulbeschreibung
+
 #### Web Engineering
-M294 Frontend einer interaktiven Webapplikation realisieren
+> [!NOTE]
+> M294 Frontend einer interaktiven Webapplikation realisieren
 
 #### Kompetenz
-Implementiert mittels vorgegebener Technologie und mit Hilfe eines existierenden Back-Ends ein Front-End einer interaktiven Webapplikation, welches die Verwaltung von Daten ermöglicht.
+> [!IMPORTANT]
+> Implementiert mittels vorgegebener Technologie und mit Hilfe eines existierenden Back-Ends ein Front-End einer interaktiven Webapplikation, welches die Verwaltung von Daten ermöglicht.
 
 #### Objekt
-Front-End einer interaktiven Webapplikation. Entsprechende Darstellung für die Verwaltung (Create, Read, Update, Delete) von Daten. Zum Beispiel: Verwaltung einer Todo-Liste.
-
+> [!NOTE]
+> Front-End einer interaktiven Webapplikation. Entsprechende Darstellung für die Verwaltung (Create, Read, Update, Delete) von Daten. Zum Beispiel: Verwaltung einer Todo-Liste.
 ---
 
 ## Vorraussetzungen
