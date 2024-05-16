@@ -3,6 +3,13 @@
 ## Auftrag
 Üben Sie das Selektieren von Elementen im DOM in diesem Auftrag
 
+1. Öffnen Sie die Datei "auftrag-2.1/Bulgarien.html" aus den Quellcodevorlagen oder die Seite für die Aufträge in einem modernen Browser.
+2. Öffnen Sie die Konsole der Entwicklertools (F12).
+3. Benutzen Sie "getElementsByClassName" und "innerText" um den Namen der Hauptstadt auszugeben.
+4. Zählen Sie wie viele Regionen (Nordostbulgarien, ...) es gibt, indem Sie "getElementsByClassName" und "length" verwenden.
+5. Geben Sie alle Namen "Klasse: p-name" der Einträge mit dem Attribute "data-group='nature'" auf der Konsole aus. Dazu soll querySelectorAll und forEach verwendet werden.
+6. Geben Sie die Fläche von Bulgarien mit nur einem "querySelector" und "innerText" zurück.
+
 ### Vorlage
 ![Vorlage Beispiel](/Modul%20Tag%201/Block_02/Auftrag%202.1/Content/Vorlage.png)
 
