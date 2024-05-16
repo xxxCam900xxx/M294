@@ -43,10 +43,13 @@ Laden Sie sich [VScode](https://code.visualstudio.com/download) herunter.
 
 ### 2. Extension Live Preview
 Nachdem Sie VScode heruntergeladen haben, gehen Sie an der linken Navigation auf **Extension**.
+
 ![ExtensionAussehen](/Content/Extension.png)
 
 Geben Sie in der Suchleiste folgendes ein: "Live Server"
+
 ![LiveServerAussehen](/Content/LiveServer.png)
+
 VS Marketplace Link: [VScode Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### 3. Erstellen Sie einen Ordner
@@ -58,6 +61,7 @@ Nun erstllen Sie einen Ordner und öffnen Sie den Ordner mit VScode.
 
 ### 4. HTML File hinzufügen und starten
 Clicken Sie Linksklick im Ordner bereich in VScode und erstellen Sie ein neues File.
+
 ![VScode Fileerstellen](/Content/AddFile.png)
 
 Geben Sie dem File den Namen "**index.html**"
@@ -81,6 +85,7 @@ Im index.html File erstellen Sie folgendes Konstrukt:
 </html>
 ```
 oder geben Sie ein Ausrufezeichen ein und Klicken Sie die oberste Möglichkeit.
+
 ![AlternativKonstrukt](/Content/ExlemationStruktur.png)
 
 Jetzt sind Sie bereit, den Live Server zu starten, den wir zu Beginn installiert haben.
