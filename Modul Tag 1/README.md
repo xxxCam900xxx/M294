@@ -7,7 +7,14 @@
 
 # Inhaltsverzeichnis
 - [Frontend in Webapplikationen](#frontend-in-webapplikationen)
-- [Block 1 | Auftrag 1.1 - HTML und CSS repetieren ](/Modul%20Tag%201/Block_01/Auftrag%201.1/)
+- [Block 1 | Auftrag 1.1 - HTML und CSS repetieren ](/Modul%20Tag%201/Block_01/Auftrag%201.1/README.md)
+- [«Clientseitige» Webtechnologien](#clientseitige-webtechnologien)
+- [Clientseitige Webtechnologien über die Zeit](#client-server-modell-im-world-wide-web)
+- [Clientseitige Webtechnologien über die Zeit](#clientseitige-webtechnologien-über-die-zeit)
+- [JavaScript in HTML einbinden](#javascript-in-html-einbinden)
+- [Block 1 | Aufgabe 1.2: "Hallo Welt!" mit JavaScript](/Modul%20Tag%201/Block_01/Auftrag%201.2/README.md)
+- [JavaScript Grundlagen](#javascript-grundlagen)
+- [Block 1 | Aufgabe 1.3: Mit Schleifen, Bedingungen und Modulo arbeiten](/Modul%20Tag%201/Block_01/Auftrag%201.3/README.md)
 
 ---
 
@@ -49,3 +56,76 @@ Definition. Webtechnologien sind Instrumente der Webseitenerstellung. Ihre Funkt
 
 **History of JavaScript**: 
 [https://www.youtube.com/watch?v=Sh6lK57Cuk4&ab_channel=Fireship](https://www.youtube.com/watch?v=Sh6lK57Cuk4&ab_channel=Fireship)
+
+---
+
+# Client-Server-Modell im World Wide Web
+
+![](/Modul%20Tag%201/Content/ClientServerModell01.png)
+Unser Endgerät macht eine Server Abfrage
+![](/Modul%20Tag%201/Content/ClientServerModell02.png)
+Serverseitiger Code wird von einem Dienst auf dem Server ausgeführt, z.B. mit PHP, Java oder JS
+![](/Modul%20Tag%201/Content/ClientServerModelll03.png)
+Clientseitiger Code wird von vom Browser auf dem Client ausgeführt, z.B. mit JS
+
+---
+
+# Clientseitige Webtechnologien über die Zeit
+Um die Jahrtausendwende gab es verschiedene Ansätze für clientseitige Technologien, bevor sich schlussendlich
+JavaScript ganz durchgesetzt hat.
+
+![](/Modul%20Tag%201/Content/VorgängerVorJS.png)
+
+Das World Wide Web ohne Javascript heutzutage, wäre eine Lustlose Leere.
+
+Viele Webseiten wie:
+- youtube.com
+- instagram.com
+- srf.ch
+
+wären einfach Leer oder Laden nicht einmal rein!
+
+---
+
+# JavaScript in HTML einbinden
+
+```html
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Hello, World! /title>
+
+            <script>
+            alert("Hello, World!")
+            </script>
+
+            <script src="./external.js"></script>
+        </head>
+        <body>
+            ...
+        </body>
+
+        <script src="./external.js"></script>
+
+        <script>
+            alert("Hello, World!")
+            </script>
+    </html>
+```
+---
+
+# JavaScript Grundlagen
+
+### Variablen und Datentypen
+- [Struktur von JavaScript](https://javascript.info/structure)
+- [Variablen](https://javascript.info/variables)
+- [Datentypen](https://javascript.info/types)
+
+### Vergleiche und Verzweigungen
+- [Vergleiche | < > == === !=](https://javascript.info/comparison)
+- [Verzeigungen | If ... else](https://javascript.info/ifelse)
+- [Operatoren | OR AND NOT](https://javascript.info/logical-operators)
+
+---

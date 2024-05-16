@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Welt!</title>
+    <link rel="stylesheet" href="/Modul Tag 1/Block_01/Auftrag 1.2/Content/root.css">
+</head>
+
+<body>
+    <!-- Button einfügen -->
+    <button onclick="Alert_v1();">Extern</button>
+    <button onclick="Alert_v2();">Intern</button>
+
+</body>
+
+<script src="/Modul Tag 1/Block_01/Auftrag 1.2/Content/alert.js"></script>
+
+<script>
+
+    function Alert_v2() {
+        let Antwort = "Bitte auswählen\nEntweder OK or Abbruch.";
+        if (confirm(Antwort) == true) {
+            Antwort = "Dankeschön :D";
+        } else {
+            Antwort = "OHAAAAAAAAA! :(";
+        }
+        alert(Antwort);
+    }
+
+</script>
+
+</html>
