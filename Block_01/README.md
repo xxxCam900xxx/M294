@@ -1,7 +1,7 @@
 # Block 1 | Einstieg und Repetition
 
 # Inhaltsverzeichnis
-- [Block 1 | Lernziele](#lernziele)
+- [Block 1 | Lernziele](#block-1--lernziele)
 - [Auftrag | 1.1]()
 - [Auftrag | 1.2]()
 - [Auftrag | 1.3]()
