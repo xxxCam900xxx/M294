@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #1cd761;
+    --secondary-color: #b7facf;
+    --text-color: #000000;
+    --alternative-text-color: #ffffff;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+h1 {
+    font-size:  300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+main {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 75px 25% 0px 25%;
+}
+
+.spacemaker {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    padding: 0px 25%;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    z-index: 100;
+}
+
+header>div>h2 {
+    font-size: 250%;
+}
+
+header>div>a {
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    color: var(--secondary-color);
+    border-radius: 25px;
+    transition: all ease 0.5s;
+}
+
+header>div>a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Ablum Section with Flexbox */
+.albums_v1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Ablum Section with Grid */
+.albums_v2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
