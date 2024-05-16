@@ -48,7 +48,9 @@ VS Marketplace Link: [VScode Live Server](https://marketplace.visualstudio.com/i
 
 ### 3. Erstellen Sie einen Ordner
 Nun erstllen Sie einen Ordner und öffnen Sie den Ordner mit VScode.
+
 ![InVScodeFolderÖffnen](/Content/VScodeOpenFolder.png)
+
 ![OrdnerAuswählen](/Content/TestOrdnerSelecrt.png)
 
 ### 4. HTML File hinzufügen und starten
