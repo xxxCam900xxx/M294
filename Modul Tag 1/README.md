@@ -1,9 +1,9 @@
 # Modul Tag 1
 > [!NOTE]
-> › Entwicklungsumgebung einrichten
-> › Repetition HTML und CSS
-> › Einstieg in JavaScript im Browser
-> › DOM manipulieren und dynamisches Gestalten
+> -  Entwicklungsumgebung einrichten
+> - Repetition HTML und CSS
+> - Einstieg in JavaScript im Browser
+> - DOM manipulieren und dynamisches Gestalten
 
 # Inhaltsverzeichnis
 - [Frontend in Webapplikationen](#frontend-in-webapplikationen)
