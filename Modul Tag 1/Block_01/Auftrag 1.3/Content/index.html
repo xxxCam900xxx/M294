@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auftrag 1.3</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(25, 25, 25);
+        }
+        * {
+            margin: 0;
+        }
+
+        #console {
+            width: 55%;
+            background-color: #000000;
+            padding: 20px 50px;
+        }
+
+        p {
+            position: relative;
+            color: white;
+            font-size: 120%;
+        }
+
+        p::before {
+            content: '>';
+            position: absolute;
+            left: -15px;
+        }
+
+        .head {
+            background-color: #333;
+            width: 55%;
+            height: 40px;
+            padding: 0px 80px 0 20px;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .red,
+        .yellow,
+        .green {
+            height: 15px;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+        }
+
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .green {
+            background-color: rgb(0, 184, 71);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    <div id="console"></div>
+</body>
+<script src="/Modul Tag 1/Block_01/Auftrag 1.3/Content/loop.js"></script>
+</html>
