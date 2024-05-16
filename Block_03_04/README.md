@@ -1,7 +1,7 @@
 # Block 3/4 | UI-Komponenten im Web (Workshop)
 
 # Inhaltsverzeichnis
-- [Block 3/4 | Lernziele](#lernziele)
+- [Block 3/4 | Lernziele](#block-34--lernziele)
 - [Auftrag | 3.1]()
 - [Auftrag | 3.2]()
 - [Auftrag | 3.3]()
