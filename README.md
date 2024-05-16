@@ -5,14 +5,14 @@ M294 Frontend einer interaktiven Webapplikation realisieren
 - [Modulbeschreibung](#modulbeschreibung)
 - [Voraussetzungen](#vorraussetzungen)
 - [Setup - How to start?](#setup---how-to-start)
-- [Block 1 | Einstieg und Repetition]()
-- [Block 2 | DOM manipulieren und dynamisches Gestalten]()
-- [Block 3&4 | UI-Komponenten im Web (Workshop)]()
-- [Block 5 | Animationen und Grafiken]()
-- [Block 6 | Formularelemente einsetzen]()
-- [Block 7 | HTTP-Abfragen einsetzen]()
-- [Block 8 | Client seitiges Routing]()
-- [Block 9 | Authentifizierung benutzen (Projektarbeit)]()
+- [Block 1 | Einstieg und Repetition](/Block_01/README.md)
+- [Block 2 | DOM manipulieren und dynamisches Gestalten](/Block_02/README.md)
+- [Block 3&4 | UI-Komponenten im Web (Workshop)](/Block_03_04/README.md)
+- [Block 5 | Animationen und Grafiken](/Block_05/README.md)
+- [Block 6 | Formularelemente einsetzen](/Block_06/README.md)
+- [Block 7 | HTTP-Abfragen einsetzen](/Block_07/README.md)
+- [Block 8 | Client seitiges Routing](/Block_08/README.md)
+- [Block 9 | Authentifizierung benutzen (Projektarbeit)](/Block_09/README.md)
 
 ---
 ## Modulbeschreibung
