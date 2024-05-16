@@ -6,6 +6,7 @@
 > - DOM manipulieren und dynamisches Gestalten
 
 # Inhaltsverzeichnis
+#### Block 1
 - [Frontend in Webapplikationen](#frontend-in-webapplikationen)
 - [Block 1 | Auftrag 1.1 - HTML und CSS repetieren ](/Modul%20Tag%201/Block_01/Auftrag%201.1/README.md)
 - [«Clientseitige» Webtechnologien](#clientseitige-webtechnologien)
@@ -15,7 +16,21 @@
 - [Block 1 | Aufgabe 1.2: "Hallo Welt!" mit JavaScript](/Modul%20Tag%201/Block_01/Auftrag%201.2/README.md)
 - [JavaScript Grundlagen](#javascript-grundlagen)
 - [Block 1 | Aufgabe 1.3: Mit Schleifen, Bedingungen und Modulo arbeiten](/Modul%20Tag%201/Block_01/Auftrag%201.3/README.md)
-- []()
+- [Entwicklertools (Devtools) im Browser](#entwicklertools-devtools-im-browser)
+- [Block 1 | Aufgabe 1.4: Entwicklertools des Browsers anwenden](/Modul%20Tag%201/Block_01/Auftrag%201.4/README.md)
+- [Mit Listen (Arrays) und Objekten arbeiten](#mit-listen-arrays-und-objekten-arbeiten)
+#### Block 2
+- [DOM Grundlagen](#dom-grundlagen)
+- [Block 2 | Aufgabe 2.1: Elemente im DOM selektieren](/Modul%20Tag%201/Block_02/Auftrag%202.1/README.md)
+- [Elemente im DOM manipulieren](#elemente-im-dom-manipulieren)
+- [Auf Ereignisse (Events) aus dem DOM reagieren](#auf-ereignisse-events-aus-dem-dom-reagieren)
+- [Block 2 | Aufgabe 2.2: DOM mit JavaScript manipulieren](/Modul%20Tag%201/Block_02/Auftrag%202.2/README.md)
+- [Block 2 | Aufgabe 2.3: Dynamisches hinzufügen von CSS Klassen](/Modul%20Tag%201/Block_02/Auftrag%202.3/README.md)
+- [Block 2 | Aufgabe 2.4: Memory-Spiel erstellen](/Modul%20Tag%201/Block_02/Auftrag%202.4/README.md)
+
+---
+
+# Block 1 | Frontend für Applikationen realisieren
 
 ---
 
@@ -135,3 +150,92 @@ wären einfach Leer oder Laden nicht einmal rein!
 - [Operatoren | OR AND NOT](https://javascript.info/logical-operators)
 
 ---
+
+# Entwicklertools (Devtools) im Browser
+Mit F12 öffnet man mit jeder WebEngine den Inspector:
+- Inspector
+- Console
+- Network
+- Source / Debugger
+- Breakpoints, Conditional Breakpoints
+- Logpoints
+
+---
+
+# Mit Listen (Arrays) und Objekten arbeiten
+- [Arrays](https://javascript.info/array)
+- [Objekte](https://javascript.info/object)
+
+---
+
+# Block 2 | DOM manipulieren und dynamisches Gestalten
+
+---
+
+# DOM Grundlagen
+
+## DOM Grundlagen : Hierarchie
+- [DOM Hierarchie](https://javascript.info/dom-nodes)
+
+## DOM Grundlagen : Beziehungen
+- [Im DOM navigieren](https://javascript.info/dom-navigation)
+
+## Elemente im DOM selektieren | Teil 1
+- [Selektoren](https://javascript.info/searching-elements-dom)
+
+```javascript
+// Über die ID suchen
+getElementById(id);
+
+// Über die Klasse suchen
+getElementsByClassName(className);
+
+// Über Elementname suchen
+getElementsByTagName(tagName);
+```
+
+## Elemente im DOM selektieren | Teil 2
+```javascript
+// Nur EIN Element suchen
+querySelector(selector);
+
+// Alle Element suchen mit bestimment eigenschaften
+querySelectorAll(selector);
+```
+---
+
+# Elemente im DOM manipulieren
+```JavaScript
+// Element erstellen
+let element = document.createElement(tagName);
+
+// Element einfügen (before)
+body.prepend(element)
+
+// Element einfügen (after)
+body.append(element)
+
+// Element löschen
+remove(element);
+
+// Textinhalt in ein Element einfügen
+element.innerText = "Hello";
+
+// HTML-Inhalt in ein Element einfügen
+element.innerHTML = "Hello";
+```
+
+---
+
+# Auf Ereignisse (Events) aus dem DOM reagieren
+- [Ereignisse](https://javascript.info/events)
+
+Beim Eintreten einer Aktion eine
+Funktion ausführen:
+
+- on* = callback
+
+```JavaScript
+// Ereignis
+element.addEventListener(event, callback);
+```
