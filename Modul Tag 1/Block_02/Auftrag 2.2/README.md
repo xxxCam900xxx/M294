@@ -8,6 +8,9 @@ den DOM verändern.
 ![Vorlage Beispiel](/Modul%20Tag%201/Block_02/Auftrag%202.2/Content/Vorlage.png)
 
 ### Resultat
+- [index.html](/Modul%20Tag%201/Block_02/Auftrag%202.2/Content/index.html)
+- [script.js](/Modul%20Tag%201/Block_02/Auftrag%202.2/Content/script.js)
+
 ```JavaScript
 let AddItems = document.getElementById('add');
 let AlbumBody = document.getElementById('latest');
