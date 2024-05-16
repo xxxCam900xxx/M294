@@ -58,6 +58,7 @@ Clicken Sie Linksklick im Ordner bereich in VScode und erstellen Sie ein neues F
 ![VScode Fileerstellen](/Content/AddFile.png)
 
 Geben Sie dem File den Namen "**index.html**"
+
 ![Datei Endung](/Content/Filename.png)
 
 Im index.html File erstellen Sie folgendes Konstrukt:
