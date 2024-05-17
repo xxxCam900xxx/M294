@@ -1,0 +1,22 @@
+body {
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    font-size: 200%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
