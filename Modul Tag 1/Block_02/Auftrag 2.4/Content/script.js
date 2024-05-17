@@ -30,10 +30,11 @@ for (let i = 0; i < 2; i++) {
     // Bild zunächst verdecken
     tileImage.classList.add('hidden');
 
+    // Funktion für das Vergleichen wird hier abgerufen
     tileButton.addEventListener('click', function () {
       // Bei Klick auf den Button das Bild anzeigen
       tileImage.classList.remove('hidden');
-      comparePair();
+      checkMatch();
     });
 
     tileImage.setAttribute('src', getFlagPath(value));

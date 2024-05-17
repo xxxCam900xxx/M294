@@ -19,6 +19,9 @@
 - [Entwicklertools (Devtools) im Browser](#entwicklertools-devtools-im-browser)
 - [Block 1 | Aufgabe 1.4: Entwicklertools des Browsers anwenden](/Modul%20Tag%201/Block_01/Auftrag%201.4/README.md)
 - [Mit Listen (Arrays) und Objekten arbeiten](#mit-listen-arrays-und-objekten-arbeiten)
+- [Auftrag | 1.5: "Network" der Devtools kennenlernen](/Modul%20Tag%201/Block_01/Auftrag%201.5/README.md)
+- [Auftrag | 1.7: Einfaches JavaScript Programm schreiben](/Modul%20Tag%201/Block_01/Auftrag%201.7/README.md)
+- [Auftrag | 1.8: Einfaches JavaScript Programm schreiben 2](/Modul%20Tag%201/Block_01/Auftrag%201.8/README.md)
 #### Block 2
 - [DOM Grundlagen](#dom-grundlagen)
 - [Block 2 | Aufgabe 2.1: Elemente im DOM selektieren](/Modul%20Tag%201/Block_02/Auftrag%202.1/README.md)

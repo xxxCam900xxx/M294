@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+div * {
+    text-align: center;
+}
+
+#playground {
+    width: 100%;
+    background-color: #333;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.cup {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background ease 0.5s;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.cup button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    border: none;
+}
+
+.cup:hover {
+    background-color: rgb(219, 255, 208);
+}
+
+.cup button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bar{
+    background-color: #333;
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.bar button {
+    width: 200px;
+    background-color: #3f3f3f;
+    border: none;
+    font-size: 150%;
+    margin-left: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background ease 0.5s;
+}
+
+.bar button:hover {
+    background-color: #656565;
+}
+
+.conters {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 40px;
+}
+
+.conters > div {
+    background-color: #3f3f3f;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
