@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- ICONFONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <div id="ModalPop">
+        <button id="normal_modal">Normal Modal</button>
+    </div>
+
+    <!-- A modal dialog containing a form -->
+    <dialog id="favDialog">
+        <form>
+            <p>
+                <label>
+                    Favorite animal:
+                    <select>
+                        <option value="default">Choose…</option>
+                        <option>Brine shrimp</option>
+                        <option>Red panda</option>
+                        <option>Spider monkey</option>
+                    </select>
+                </label>
+            </p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+    <p>
+        <button id="showDialog">Show the dialog</button>
+    </p>
+    <output></output>
+
+
+
+    <script src="./normal_modal.js"></script>
+    <script src="./dialog_modal.js"></script>
+</body>
+
+</html>
