@@ -9,6 +9,7 @@
 # Inhaltsverzeichnis
 #### Block 3 / 4
 - [Block 3 | Aufgabe 3.1: Ereignisse kennenlernen](/Modul%20Tag%202/Block_03_04/Auftrag%203.1/README.md)
+- [Block 3 | Aufgabe 3.1.2: Eingabe verarbeiten](./Block_03_04/Auftrag%203.1.2/README.md)
 - [Gängige UI-Komponenten](#gängige-ui-komponenten)
 - [Block 3 | Aufgabe 3.2: Verschiedene UI-Komponenten kennenlernen](/Modul%20Tag%202/Block_03_04/Auftrag%203.2/README.md)
 - [Workshop: UI-Komponenten im Web](#workshop-ui-komponenten-im-web)

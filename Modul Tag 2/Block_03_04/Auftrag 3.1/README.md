@@ -8,6 +8,8 @@ In diesem Auftrag geht es darum, die Event wie beispielsweise "onClick", näher 
 
 ### Resultat
 
+**[Events genauer beschrieben - Webseiten Link](https://www.mediaevent.de/javascript/events.html)**
+
 **ConsoleOutput Website**
 - [index.html](./Content/index.html)
 - [app.js](./Content/app.js)
