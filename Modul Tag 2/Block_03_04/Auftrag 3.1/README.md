@@ -7,6 +7,15 @@ In diesem Auftrag geht es darum, die Event wie beispielsweise "onClick", näher 
 ![Vorlage Beispiel](/Modul%20Tag%202/Block_03_04/Auftrag%203.1/Content/Vorlage.png)
 
 ### Resultat
+
+**ConsoleOutput Website**
+- [index.html](./Content/index.html)
+- [app.js](./Content/app.js)
+
+**Event Tester**
+- [index.html](./Content/OwnTester/index.html)
+- [script.js](./Content/OwnTester/script.js)
+
 **HTML**
 ```html
 <body onload="handleLoad()"> 
