@@ -21,6 +21,12 @@ input.addEventListener('change', (event) => {
     a2.innerText = event.currentTarget.value;
 });
 
+button.onclick = () => {
+    const newLi = document.createElement("li");
+    newLi.innerText = input.value;
+    List.append(newLi);
+}
+
 bod.append(input);
 bod.append(Textchanger);
 bod.append(FinishedText);
