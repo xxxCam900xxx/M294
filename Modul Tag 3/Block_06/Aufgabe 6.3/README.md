@@ -13,10 +13,10 @@ Dazu soll zuerst die notwendige HTML Struktur erstellt werden.
 4. **Vergleichen** Sie ihr Formular mit den Formularen der anderen Teilnehmern.
 
 ### Vorlage
-[Vorlage Beispiel.pdf](./Content/tunneldurchfahrt_20190406.pdf)
+- [Vorlage Beispiel.pdf](./Content/tunneldurchfahrt_20190406.pdf)
 
 ### Resultat
 
-[index.html](./Content/index.html)
-[root.css](./Content/root.css)
-[app.js](./Content/app.js)
+- [index.html](./Content/index.html)
+- [root.css](./Content/root.css)
+- [app.js](./Content/app.js)

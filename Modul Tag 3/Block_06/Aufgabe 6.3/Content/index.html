@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gesuch</title>
+    <link rel="stylesheet" href="./root.css">
+    <script src="./app..js" defer></script>
 </head>
 <body>
+
+    <form name="beitrag" action="">
+
+        <div class="angaben">
+
+            <div class="gesuchsteller">
+                <h3>Gesuchsteller</h3>
+                <!-- Trp / Einheit / Betrieb -->
+                <div class="field">
+                    <label for="betrieb">Trp / Einheit / Betrieb:*</label>
+                    <input type="text" name="betrieb" id="betrieb" required>
+                </div>
+                <!-- Grad -->
+                <div class="field">
+                    <label for="grad">Grad:</label>
+                    <input type="text" name="grad" id="grad">
+                </div>
+                <!-- Name -->
+                <div class="field">
+                    <label for="name">Name:*</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <!-- Adresse -->
+                <div class="field">
+                    <label for="adresse">Adresse:*</label>
+                    <input type="text" name="adresse" id="adresse" required>
+                </div>
+                <!-- Postleitzahl -->
+                <div class="field">
+                    <label for="zip">PLZ/Ort:*</label>
+                    <input type="number" name="zip" id="zip" max="9999" required placeholder="9000">
+                </div>
+                <!-- Telefon -->
+                <div class="field">
+                    <label for="tel">Telefon:*</label>
+                    <input type="tel" name="tel" id="tel" required placeholder="+41 00 000 00 00">
+                </div>
+                <!-- Mobile Telefon -->
+                <div class="field">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="+41 00 000 00 00">
+                </div>
+                <!-- Fax -->
+                <div class="field">
+                    <label for="fax">Fax:*</label>
+                    <input type="text" name="fax" id="fax" required>
+                </div>
+                <!-- Email -->
+                <div class="field">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+
+            <div class="bewilligung">
+                <h3>Bewilligungsempfänger</h3>
+                <div class="empfaenger">
+                    <div class="field">
+                        <input type="checkbox" name="gesuchsteller" id="gesuchsteller">
+                        <label for="gesuchsteller">Gesuchsteller</label>
+                    </div>
+                    <div class="field">
+                        <input type="checkbox" name="absender" id="absender">
+                        <label for="absender">Absender</label>                        
+                    </div>
+                    <div class="field">
+                        <input type="checkbox" name="empfaenger" id="empfaenger">
+                        <label for="empfaenger">Empfänger</label>
+                    </div>
+                </div>
+                <div class="besondere">
+                    <div class="field special">
+                        <label for="special">Besondere Angaben</label>
+                        <textarea name="special" id="special" placeholder="z. B. Referenznummer"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="absendung">
+
+            <div class="absender"></div>
+
+        </div>
+
+
+    </form>
     
 </body>
 </html>

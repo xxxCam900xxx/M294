@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
     let formData = new FormData(form);
     let formular = Object.fromEntries(formData);
 
-    let currentVorname = formular.Vorname;
+    console.log(Data);
 
     // Bedingungen Erfüllen
     /* if (currentVorname != '') {

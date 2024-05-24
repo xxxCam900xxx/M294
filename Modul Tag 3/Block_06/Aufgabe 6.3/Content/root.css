@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.angaben,
+.absendung {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.gesuchsteller, 
+.bewilligung,
+.empfaenger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.special {
+    flex-direction: column !important;
+    gap: 5px;
+}

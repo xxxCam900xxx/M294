@@ -1,4 +1,4 @@
-# Aufgabe 6.1: PLZ zu Ort zuordnen
+# Aufgabe 6.2: Passwortbestätigung implementieren
 
 ## Auftrag
 Oftmals soll das Passwort bei einer Registrierung zur Überprüfung der Richtigkeit bestätigt werden. Diese
