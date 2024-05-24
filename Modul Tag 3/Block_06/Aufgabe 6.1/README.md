@@ -20,7 +20,7 @@ Erstellen Sie eine HTML Seite mit einem einfachen Adress-Formular. Wenn das Form
 ![Fertiges Formular](./Content/Formular.png)
 
 ```html
-<form name="" action="post">
+<form name="formular" action="post">
 
         <h1>Bitte Formular ausfüllen</h1>
 

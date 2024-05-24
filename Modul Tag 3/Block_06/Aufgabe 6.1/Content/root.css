@@ -1,9 +1,9 @@
 body {
     display: flex;
-    flex-direction: column;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 * {
@@ -25,9 +25,49 @@ form {
     flex-direction: column;
     gap: 10px;
     background-color: rgb(244, 244, 244);
+    position: fixed;
+    height: fit-content;
 }
 
 .field {
     display: flex;
     flex-direction: column;     
+}
+
+#list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 30%;
+}
+
+/* ===================================== */
+
+.form_card {
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    height: fit-content;
+}
+
+.button {
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    width: 100%;
+    transition: background 0.5s ease;
+    
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: rgba(255, 72, 72, 0.485);
 }

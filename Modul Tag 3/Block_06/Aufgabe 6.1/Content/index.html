@@ -6,44 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Formular</title>
     <link rel="stylesheet" href="./root.css">
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
 
-    <form name="" action="post">
+    <form name="formular" action="post">
 
         <h1>Bitte Formular ausfüllen</h1>
 
         <!-- Vorname -->
         <div class="field">
             <label for="vorname">Vorname:</label>
-            <input type="text" name="Vorname" id="vorname">
+            <input type="text" name="Vorname" id="vorname" required>
         </div>
         <!-- Nachname -->
         <div class="field">
             <label for="nachname">Nachname:</label>
-            <input type="text" name="Nachname" id="nachname">
+            <input type="text" name="Nachname" id="nachname" required>
         </div>
         <!-- Strasse -->
         <div class="field">
             <label for="strasse">Strasse:</label>
-            <input type="text" name="Strasse" id="strasse">
+            <input type="text" name="Strasse" id="strasse" required>
         </div>
         <!-- Ortschaft: -->
         <div class="field">
             <label for="ort">Ort:</label>
-            <input type="text" name="Ort" id="ort">
+            <input type="text" name="Ort" id="ort" required>
         </div>
         <!-- Postleitzahl -->
         <div class="field">
             <label for="plz">PLZ:</label>
-            <input type="number" name="PLZ" id="plz" maxlength="4">
+            <input type="number" name="PLZ" id="plz" required>
         </div>
 
         <!-- Emailadresse -->
         <div class="field">
             <label for="email">E-mail:</label>
-            <input type="email" name="E-mail" id="email">
+            <input type="email" name="Email" id="email" required>
         </div>
 
         <!-- Duzen oder Siezen -->
@@ -60,11 +61,11 @@
 
         <!-- Bekannt? -->
         <div class="field">
-            <select name="Bekannt von" id="meet">
-                <option value="none" selected disabled>Bitte auswählen...</option>
-                <option value="privat">Privat</option>
-                <option value="schule">Schule</option>
-                <option value="geschaeft">Geschäft</option>
+            <select name="Bekanntvon" id="meet">
+                <option value="Neu" selected disabled>Bitte auswählen...</option>
+                <option value="Privat">Privat</option>
+                <option value="Schule">Schule</option>
+                <option value="Geschäft">Geschäft</option>
             </select>
         </div>
 
@@ -73,6 +74,8 @@
         </div>
 
     </form>
+
+    <div id="list"></div>
 
 </body>
 
