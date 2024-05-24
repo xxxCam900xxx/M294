@@ -8,7 +8,12 @@ form.addEventListener("submit", (event) => {
     let formData = new FormData(form);
     let formular = Object.fromEntries(formData);
 
+    let currentVorname = formular.Vorname;
+
     // Bedingungen Erfüllen
+    /* if (currentVorname != '') {
+        form.elements.Vorname.setCustomValidity();
+    } */
 
 
     Data.push(formular);
@@ -65,11 +70,11 @@ function renderData(Data) {
         form_email.innerHTML = currentEmail;
         form_email.setAttribute('href', 'mailto:' + currentEmail);
 
-        if (currentDuzen == 'on') {
-            form_duzen.innerHTML = 'Duzen erlaubt? : <input type="checkbox" name="Duzen" id="fromduzen" disabled checked>';
+        if (currentDuzen == 1) {
+            form_duzen.innerHTML = 'Duzen erlaubt? : <input type="checkbox" value="on" name="Duzen" id="fromduzen" disabled checked>';
         }
-        if (currentSiezen == 'on') {
-            form_siezen.innerHTML = 'Siezen erlaubt? : <input type="checkbox" name="Siezen" id="fromsiezen" disabled checked>';
+        if (currentSiezen == 1) {
+            form_siezen.innerHTML = 'Siezen erlaubt? : <input type="checkbox" value="on" name="Siezen" id="fromsiezen" disabled checked>';
         }
 
         form_duzen.innerHTML = 'Duzen erlaubt? : <input type="checkbox" name="Duzen" id="fromduzen" disabled>';
