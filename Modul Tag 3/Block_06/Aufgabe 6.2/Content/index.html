@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="./root.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <form name="regist">
+
+        <div class="field">
+            <h1>Registrierung</h1>
+            <h3>Füllen Sie das Formular aus:</h3>
+        </div>
+
+        <div class="field">
+            <label for="email">Email: *</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="field">
+            <label for="pwd">Passwort: *</label>
+            <input type="password" name="pwd" id="pwd" required minlength="8">
+        </div>
+
+        <div class="field">
+            <label for="pwd_accept">Passwortbestätigung: *</label>
+            <input type="password" name="pwd_accept" id="pwd_accept" required minlength="8">
+        </div>
+
+        <div class="field agb">
+            <input type="checkbox" name="agb" id="agb" required>
+            <label for="agb">Ich habe die AGB gelesen und akzeptiert. *</label>
+        </div>
+
+        <div class="field">
+            <button type="submit" value="Registrieren">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
