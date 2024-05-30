@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-Up Projekt</title>
+    <link rel="stylesheet" href="./root.css">
+    <script src="./slider.js" defer></script>
+    <script src="./menu.js" defer></script>
+    <script src="./form.js" defer></script>
+    <script src="./accordeon.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <h3>The Mob</h3>
+        <button class="mobile-menu-toggle">
+          Menu
+        </button>
+        <nav class="mobile-menu">
+          <menu>
+            <li><a href="#p">Product</a></li>
+            <li><a href="#a">About</a></li>
+            <li><a href="#c">Contact</a></li>
+            <li><a href="#h">Home</a></li>
+          </menu>
+        </nav>
+      </header>
+
+    <main>
+        <section id="SLIDER">
+
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://cdn.pixabay.com/photo/2023/06/25/11/12/orange-flowers-8087066_1280.jpg"
+                        alt="Image 1" class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/03/19/13/tulips-6066037_1280.jpg" alt="Image 2"
+                        class="slide">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/01/19/07/tulips-5118757_1280.jpg" alt="Image 3"
+                        class="slide">
+                </div>
+
+                <div class="slider-nav">
+                    <button class="prev-btn">Prev</button>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="FAQ">
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 1</div>
+                    <div class="accordion-content">
+                        <p>Content for Section 1</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 2</div>
+                    <div class="accordion-content">
+                        <p>Content for Section 2</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 3</div>
+                    <div class="accordion-content">
+                        <p>Content for Section 3</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
