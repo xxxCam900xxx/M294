@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLZ Autocomplete</title>
+    <link rel="stylesheet" href="./root.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <form name="zipcode" action="" method="get">
+
+        <div class="field">
+            <label for="zip">Postleitzahl</label>
+            <input type="number" name="zip" list="zip">
+                <datalist id="zip" name="zip">
+                </datalist>
+            </input>
+        </div>
+
+        <div class="field">
+            <label for="ort">Ort</label>
+            <input type="text" name="ort" id="ort">
+        </div>
+
+        <button type="submit" name="button" id="button">Senden</button>
+
+    </form>
+
+</body>
+
+</html>

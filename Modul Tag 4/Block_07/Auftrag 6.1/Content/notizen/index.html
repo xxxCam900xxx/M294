@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgb(234, 234, 234);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .field:invalid {
+        outline: 2px solid red;
+      }
+
+      .field:has(:invalid) label {
+        color: red;
+      }
+
+      .field:has([required]) label {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="register">
+      <div class="field">
+        <label for="zip">ZIP</label>
+        <input type="text" name="zip" id="zip" list="list" required />
+        <datalist id="list">
+          <option value="8001">Zürich</option>
+        </datalist>
+      </div>
+      <div class="field">
+        <label for="ort">ORT</label>
+        <input type="text" name="ort" id="ort" readonly />
+      </div>
+    </form>
+
+    <script>
+      const form = document.forms.register;
+
+      form.elements.zip.addEventListener("change", async () => {
+        try {
+          // Daten laden
+          const response = await fetch("../places.json");
+          const data = await response.json();
+
+          // Daten nach Zipcode suchen
+          const input = form.elements.zip.value;
+          let foundplace = data.find((place) => place.zipcode) === input;
+
+          // PlaceFeld füllen
+          if (foundplace) {
+            form.elements.place.value = foundplace.place;
+          } else {
+            form.elements.place.value = "";
+          }
+        } catch {
+          alert("error");
+        }
+      });
+
+      async function pop() {
+        const response = await fetch("../places.json");
+        const data = await response.json();
+        const listElement = document.getElementById('list');
+
+        for (const place of data) {
+            const opt = document.createElement('option');
+            opt.value = place.zipcode;
+        }
+      }
+
+      pop();
+    </script>
+  </body>
+</html>
