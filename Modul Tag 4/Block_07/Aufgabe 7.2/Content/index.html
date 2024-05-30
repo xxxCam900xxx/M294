@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,26 @@
     <link rel="stylesheet" href="./root.css">
     <script src="./app.js" defer></script>
 </head>
+
 <body>
 
     <form name="register" action="" method="post">
 
-        <label for="message">Kommentar</label>
-        <input type="text" name="message" id="message">
+        <div class="field">
+            <label for="message">Kommentar</label>
+            <!-- <input type="text" name="message" id="message"> -->
+            <textarea name="message" id="message" rows="6" cols="30"></textarea>
+        </div>
 
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username">
+        <div class="field">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
 
         <button type="submit">Senden</button>
 
     </form>
-    
+
 </body>
+
 </html>
