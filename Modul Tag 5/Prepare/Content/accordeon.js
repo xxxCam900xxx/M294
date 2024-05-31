@@ -1,28 +1,21 @@
-const accordionItems = document.querySelectorAll('.accordion-item');
+// Alle Elemente mit der Klasse "accordion" abrufen
+var accordions = document.getElementsByClassName("accordion");
 
-// Function to toggle the accordion content
-function toggleAccordion() {
-  const accordionContent = this.nextElementSibling;
-  this.classList.toggle('active');
-
-  accordionItems.forEach((item) => {
-    const content = item.querySelector('.accordion-content');
-    const header = item.querySelector('.accordion-header');
-    if (content !== accordionContent) {
-      content.style.display = 'none';
-      header.classList.remove('active');
+// Durch jedes Akkordeon-Element iterieren
+for (var i = 0; i < accordions.length; i++) {
+  // Dem jeweiligen Akkordeon einen Klick-Event-Listener hinzufügen
+  accordions[i].addEventListener("click", function() {
+    // Die Klasse "active" des angeklickten Akkordeons umschalten
+    this.classList.toggle("active");
+    
+    // Das nächste Geschwister-Element des angeklickten Akkordeons abrufen
+    var panel = this.nextElementSibling;
+    
+    // Die maximale Höhe des Panels umschalten
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-
-  if (accordionContent.style.display === 'block') {
-    accordionContent.style.display = 'none';
-  } else {
-    accordionContent.style.display = 'block';
-  }
 }
-
-// Add click event listener to each accordion header
-accordionItems.forEach((item) => {
-  const header = item.querySelector('.accordion-header');
-  header.addEventListener('click', toggleAccordion);
-});

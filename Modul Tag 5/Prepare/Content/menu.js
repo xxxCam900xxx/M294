@@ -2,11 +2,11 @@ const menuToggle= document.querySelector('button.mobile-menu-toggle');
 const mobileMenu= document.querySelector('nav.mobile-menu');
 
 menuToggle.addEventListener('click', function () {
-    if(mobileMenu.classList.contains('open')){
+    if (menuToggle.classList.contains('active')) {
       mobileMenu.classList.remove('open');
-      menuToggle.innerHTML = 'Menu';
+      menuToggle.classList.remove('active');
     } else {
       mobileMenu.classList.add('open');
-      menuToggle.innerHTML = 'Close';
+      menuToggle.classList.add('active');
     }
   })
