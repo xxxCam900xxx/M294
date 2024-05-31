@@ -1,0 +1,267 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* Landingpage START ====================== */
+.auswahl {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.auswahl>a {
+    color: black;
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 10px;
+
+    transition: all ease 0.3s;
+}
+
+.auswahl>a>i {
+    font-size: 2rem;
+}
+
+.auswahl>a:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+/* Landingpage END====================== */
+
+/* Header START========================= */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    height: 75px;
+
+    background-color: rgb(233, 233, 233);
+    border-bottom: 1px solid black;
+}
+
+header> :first-child,
+header> :last-child {
+    width: 250px;
+}
+
+header>.logo>a {
+    font-size: 1.5rem;
+}
+
+header>.rest {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+header>.rest>.login,
+header>.rest>.back {
+    display: flex;
+}
+
+header>.rest>.login>.login_modal,
+header>.rest>.back>a {
+    border: none;
+    background-color: rgb(203, 203, 203);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+    transition: background ease 0.3s;
+}
+
+header>.rest>.login>.login_modal:hover,
+header>.rest>.back>a:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+header>.searchbar input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+header>.searchbar input::after {
+    content: '<i class="fa-solid fa-magnifying-glass"></i>';
+    position: absolute;
+}
+
+/* Header END========================= */
+
+/* Actionmenu START=================== */
+.actionmenu {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: rgb(222, 222, 222);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.actionmenu>button {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    transition: all ease 0.3s;
+}
+
+.actionmenu>button:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+/* Actionmenu END=================== */
+
+/* Task START======================= */
+
+main {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#task_list {
+    width: 50%;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+    height: 80vh;
+}
+
+#task_list .task:nth-child(even) {
+    background-color: rgb(222, 222, 222);
+}
+
+.task {
+    padding: 10px;
+}
+
+/* Task END======================= */
+
+/* PopUp Formualr Standard START======== */
+.popup {
+    position: fixed;
+    top: 100%;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.237);
+    backdrop-filter: blur(10px);
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all ease 0.5s;
+}
+
+.popup.show {
+    top: 0;
+}
+
+.popup>form {
+    position: relative;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 400px;
+    background-color: rgb(228, 228, 228);
+
+    padding: 50px 20px;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+.popup>form>.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup>form>.field.checkbox {
+    flex-direction: row;
+}
+
+.pop_close {
+    background-color: rgb(255, 114, 114);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+    padding: 10px;
+
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+
+    border-radius: 10px;
+    transition: all ease 0.3s;
+}
+
+.pop_close:hover {
+    background-color: red;
+}
+
+input:invalid {
+    border: red;
+}
+/* PopUp Formualr Standard END======== */

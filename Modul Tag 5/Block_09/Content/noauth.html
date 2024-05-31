@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektarbeit : ToDoList</title>
+
+    <!-- ICONFONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="./root.css">
+    <script src="./noauth.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href=""><i class="fa-solid fa-file"></i> Taskmanager</a>
+        </div>
+
+        <div class="searchbar">
+
+            <form name="searchbar" action="" method="get">
+                <input type="search" name="search" id="search" placeholder="Search for TaskID...">
+            </form>
+
+        </div>
+
+        <div class="rest">
+
+            <div class="login">
+
+                <button id="login" class="login_modal">
+                    <p>Login</p>
+                </button>
+
+            </div>
+
+            <div class="back">
+                <a href="./index.html">Zurück</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="task_list">
+
+        </section>
+
+    </main>
+
+    <footer class="actionmenu">
+
+        <button id="refresh"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+
+        <button id="create"><i class="fa-solid fa-plus"></i> Erstellen</button>
+        <button id="change"><i class="fa-solid fa-wand-magic-sparkles"></i> Ändern</button>
+        <button id="delete"><i class="fa-solid fa-trash-can"></i> Löschen</button>
+
+    </footer>
+
+    <!-- POPUP FOR CREATE A TASK -->
+    <div class="popup" id="pop_create">
+        <form action="" method="post" name="create">
+
+            <h1>Task erstellen</h1> 
+
+            <span class="pop_close">X</span>
+
+            <div class="field">
+                <label for="title">Task:</label>
+                <textarea name="title" id="title" minlength="1"
+                    placeholder="Aufgabe: Wäsche waschen..."></textarea>
+            </div>
+
+            <div class="field checkbox">
+                <label for="completed">Erledigt?</label>
+                <input type="checkbox" name="completed" id="completed">
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-plus"></i> Erstellen</button>
+
+        </form>
+    </div>
+
+    <!-- POPUP FOR DELETE A TASK -->
+    <div class="popup" id="pop_delete">
+        <form action="" method="post" name="delete">
+
+            <h1>Task löschen</h1> 
+
+            <span class="pop_close">X</span>
+
+            <div class="field">
+                <label for="taskID">TaskID:</label>
+                <input type="number" name="taskID" id="taskID" required>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-plus"></i> Erstellen</button>
+
+        </form>
+    </div>
+
+    <!-- POPUP FOR CHANGE A TASK -->
+    <div class="popup" id="pop_change">
+        <form action="" method="post" name="change">
+
+            <h1>Task bearbeiten</h1> 
+
+            <span class="pop_close">X</span>
+
+            <div class="field">
+                <label for="taskID">TaskID:</label>
+                <input type="number" name="taskID" id="taskID" required>
+            </div>
+
+            <div class="field">
+                <label for="title">Task:</label>
+                <textarea name="title" id="title" minlength="1"
+                    placeholder="Aufgabe: Wäsche waschen..."></textarea>
+            </div>
+
+            <div class="field checkbox">
+                <label for="completed">Erledigt?</label>
+                <input type="checkbox" name="completed" id="completed">
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-plus"></i> Absenden</button>
+
+        </form>
+    </div>
+
+    <!-- POPUP FOR CHANGE A TASK -->
+    <div class="popup" id="pop_login">
+        <form action="" method="post" name="login">
+
+            <h1>Login</h1> 
+
+            <span class="pop_close">X</span>
+
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label for="password">Passwort:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-plus"></i> Login</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
